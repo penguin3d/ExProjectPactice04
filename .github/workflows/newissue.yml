@@ -1,7 +1,4 @@
-on:
-    issues:
-      types:
-        - opened
+on: issues
 jobs:
     label_issue:
       runs-on: ubuntu-latest
