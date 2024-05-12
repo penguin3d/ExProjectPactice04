@@ -1,7 +1,10 @@
-on: issues
+on:
+    issues:
+      types:
+        - opened
 jobs:
     label_issue:
       runs-on: ubuntu-latest
       steps:
         - name: Output event details
-          run: echo ${{ toJson(github)}}}
+          run: echo ${{ toJson(github.event)}}
