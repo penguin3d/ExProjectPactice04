@@ -8,8 +8,5 @@ jobs:
       steps:
         - env:
             GH_ENV: ${{ github }}
-            # GH_TOKEN: ${{ github.token }}
-            # ISSUE_URL: ${{ github.event.issue.html_url }}
           run: |
-            # gh issue edit $ISSUE_URL --add-label "triage"
             echo $GH_ENV
