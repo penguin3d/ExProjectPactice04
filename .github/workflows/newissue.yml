@@ -6,7 +6,5 @@ jobs:
     label_issue:
       runs-on: ubuntu-latest
       steps:
-        - env:
-            GH_ENV: ${{ github }}
-          run: |
-            echo $GH_ENV
+        - name: Output event details
+          run: echo ${{ toJson(github)}}}
